@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualsAnalyzer.Test", "Equa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualsAnalyzer.Vsix", "EqualsAnalyzer\EqualsAnalyzer.Vsix\EqualsAnalyzer.Vsix.csproj", "{FF8DEC09-0659-4632-A70E-C9FA299B504D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{619DE4FD-E53D-43B0-B920-15184F5EDE60}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
