@@ -117,15 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AnalyzerDescription" xml:space="preserve">
+  <data name="EqualsAnalyzerDescription" xml:space="preserve">
+    <value>Ensure you compare strings the way it is expected.</value>
+    <comment>Ensure you compare strings the way it is expected.</comment>
+  </data>
+  <data name="EqualsAnalyzerMessageFormat" xml:space="preserve">
+    <value>StringComparison is missing</value>
+    <comment>StringComparison is missing</comment>
+  </data>
+  <data name="EqualsAnalyzerTitle" xml:space="preserve">
+    <value>Specify StringComparison in String.Equals</value>
+    <comment>Specify StringComparison in String.Equals</comment>
+  </data>
+  <data name="TypeNameAnalyzerDescription" xml:space="preserve">
     <value>Type names should be all uppercase.</value>
     <comment>An optional longer localizable description of the diagnostic.</comment>
   </data>
-  <data name="AnalyzerMessageFormat" xml:space="preserve">
+  <data name="TypeNameAnalyzerMessageFormat" xml:space="preserve">
     <value>Type name '{0}' contains lowercase letters</value>
     <comment>The format-able message the diagnostic displays.</comment>
   </data>
-  <data name="AnalyzerTitle" xml:space="preserve">
+  <data name="TypeNameAnalyzerTitle" xml:space="preserve">
     <value>Type name contains lowercase letters</value>
     <comment>The title of the diagnostic.</comment>
   </data>
