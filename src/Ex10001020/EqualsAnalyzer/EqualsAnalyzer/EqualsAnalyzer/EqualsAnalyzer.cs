@@ -43,7 +43,10 @@ namespace EqualsAnalyzer
 
         private void AnalyzeNode(SyntaxNodeAnalysisContext context)
         {
-            var invocationExpr = (InvocationExpressionSyntax)context.Node;
+            var invocationExpr = context.Node as InvocationExpressionSyntax;
+
+            if (invocationExpr == null)
+                return;
 
             // invocationExpr.Expression is the expression before "(", here "string.Equals".
             // In this case it should be a MemberAccessExpressionSyntax, with a member name "Equals"

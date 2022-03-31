@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.CodeAnalysis.Testing;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
 using VerifyCS = EqualsAnalyzer.Test.CSharpCodeFixVerifier<
     EqualsAnalyzer.TypeNameAnalyzerAnalyzer,
