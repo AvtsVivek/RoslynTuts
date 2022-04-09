@@ -31,12 +31,18 @@ class C
             Console.WriteLine(tree.ToString());
             
             var errorDiagnostics = tree.GetDiagnostics()
-                .Where(n => n.Severity == 
-                Microsoft.CodeAnalysis.DiagnosticSeverity.Error);
+                .Where(n => n.Severity == DiagnosticSeverity.Error);
 
-            foreach (var item in errorDiagnostics)
+            if(errorDiagnostics.Count() == 0)
             {
-                Console.WriteLine(item.GetMessage());
+                Console.WriteLine("No errors");
+            }
+            else
+            {
+                foreach (var error in errorDiagnostics)
+                {
+                    Console.WriteLine(error.GetMessage());
+                }
             }
 
             var root = tree.GetRoot();
@@ -51,7 +57,9 @@ class C
             {
                 Console.WriteLine("The members are as follows....");
                 foreach (MemberDeclarationSyntax member in cds.Members)
+                {
                     Console.WriteLine(member.ToString());
+                }
             }
 
             var childTokens = root.ChildTokens();
