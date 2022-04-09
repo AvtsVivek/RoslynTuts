@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeConst", "MakeConst\MakeConst\MakeConst.csproj", "{41BF580D-DCA2-4B17-BDDC-DFBB1143DF39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeConst", "MakeConst\MakeConst\MakeConst.csproj", "{41BF580D-DCA2-4B17-BDDC-DFBB1143DF39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeConst.CodeFixes", "MakeConst\MakeConst.CodeFixes\MakeConst.CodeFixes.csproj", "{7837FFD6-E6BA-4010-8AE8-87525A875951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeConst.CodeFixes", "MakeConst\MakeConst.CodeFixes\MakeConst.CodeFixes.csproj", "{7837FFD6-E6BA-4010-8AE8-87525A875951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeConst.Package", "MakeConst\MakeConst.Package\MakeConst.Package.csproj", "{881FBD12-16F5-4D0E-9984-515F5800F89A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeConst.Package", "MakeConst\MakeConst.Package\MakeConst.Package.csproj", "{881FBD12-16F5-4D0E-9984-515F5800F89A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeConst.Test", "MakeConst\MakeConst.Test\MakeConst.Test.csproj", "{358EE58A-A8BF-4866-A9A9-634DA8DE6AF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeConst.Test", "MakeConst\MakeConst.Test\MakeConst.Test.csproj", "{358EE58A-A8BF-4866-A9A9-634DA8DE6AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeConst.Vsix", "MakeConst\MakeConst.Vsix\MakeConst.Vsix.csproj", "{1F65A719-EED7-4D97-B983-33137C69001A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeConst.Vsix", "MakeConst\MakeConst.Vsix\MakeConst.Vsix.csproj", "{1F65A719-EED7-4D97-B983-33137C69001A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iac", "iac", "{63698420-37C2-43B4-93F6-5F1300C4DE7D}"
+	ProjectSection(SolutionItems) = preProject
+		iac\BuildAndDeployToNuget.yml = iac\BuildAndDeployToNuget.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
