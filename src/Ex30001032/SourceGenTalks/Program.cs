@@ -12,6 +12,8 @@ ILogger logger = Program.CreateLogger(LogLevel.Trace);
 
 logger.LogInformation("Hello name!" );
 
+
+
 //logger.Hello("World");
 
 //logger.LogWarning(Helper.Text);
