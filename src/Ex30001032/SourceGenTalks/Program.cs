@@ -11,33 +11,44 @@ ILogger logger = Program.CreateLogger(LogLevel.Trace);
 
 logger.LogInformation("Hello {name}!", "World" );
 
-await Task.Yield();
-
 logger.LogInformation("Hello {name}!", 0x_F0); // This is Hello 240!
 
-logger.Hello(9);
-
-logger.HelloWithSourceGenerator(9);
 // The above has performance hits.
 
 // So we need to use logger message extension.
 
-public static partial class LogExtensions
+logger.Hello(9);
+
+// The following using source generator
+logger.HelloWithSourceGenerator(9);
+
+Entity entity = new()
 {
-    private static Action<ILogger, int, Exception> hello = LoggerMessage.Define<int>(LogLevel.Information, 0x_F0, "Hello, {name}");
-    public static void Hello(this ILogger logger, int number)
-    {
-        hello.Invoke(logger, number, null!);
-    }
+    Name = "Generation",
+    // Number = 0x_F0,
+    Number = 1
+};
 
-    // The following is using source generators.
-    // To see where it has got the gnerated code,
-    // Right click HelloWithSourceGenerator and then go to definition.
+SomeOtherEntity someOtherEntity = new()
+{
+    Name = "GenerationTwo",
+    // Number = 0x_F0,
+    Number = 2
+};
 
-    [LoggerMessage(240, LogLevel.Information, "Hello, {name}!")]
-    public static partial void HelloWithSourceGenerator(this ILogger logger, int name);
+var jsonEntity = JsonSerializer.Serialize(entity, SerializerContext.Default.Entity);
+logger.LogInformation(jsonEntity);
+Entity? roundtrip = JsonSerializer.Deserialize<Entity>(jsonEntity, SerializerContext.Default.Entity);
+logger.LogError(roundtrip!.ToString());
+//Note we are logging that as error(above). So it shows up as red colored 'fail' in the logged console.
 
-}
+var jsonSomeOtherEntity = JsonSerializer.Serialize(someOtherEntity, SerializerContext.Default.SomeOtherEntity);
+logger.LogInformation(jsonSomeOtherEntity);
+var roundtripSomeOtherEntity = JsonSerializer.Deserialize<SomeOtherEntity>(jsonSomeOtherEntity, SerializerContext.Default.SomeOtherEntity);
+logger.LogError(roundtripSomeOtherEntity!.ToString());
+
+await Task.Yield();
+
 
 
 //logger.Hello("World");

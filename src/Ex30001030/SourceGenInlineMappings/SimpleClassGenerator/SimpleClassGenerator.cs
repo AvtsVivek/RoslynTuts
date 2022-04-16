@@ -1,4 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.Text;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -26,36 +27,7 @@ namespace SimpleClassGenerator
                 namespaceNameStatement = "namespace " + namespaceName;
             }
             
-
-            var logSrc = string.Empty;
-
-            //            if (namespaceName == "<global namespace>" || string.IsNullOrWhiteSpace(namespaceName))
-            //            {
-            //                logSrc = $@"
-            //using System;
-            //using System.CodeDom.Compiler;
-            //using System.Runtime.CompilerServices;
-
-            //[GeneratedCode(""LogAttribute"", ""x.x.x"")] // Check the namespace and version
-            //[CompilerGenerated]
-            //public class LogAttribute : Attribute {{ }}";
-            //            }
-            //            else
-            //            {
-            //                logSrc = $@"
-            //using System;
-            //using System.CodeDom.Compiler;
-            //using System.Runtime.CompilerServices;
-
-            //namespace " + namespaceName + $@"
-
-            //[GeneratedCode(""LogAttribute"", ""x.x.x"")] // Check the namespace and version
-            //[CompilerGenerated]
-            //public class LogAttribute : Attribute {{ }}";
-            //            }
-
-            
-            logSrc = $@"
+            var logSrc = $@"
 using System;
 using System.CodeDom.Compiler;
 using System.Runtime.CompilerServices;
@@ -68,8 +40,9 @@ $@"
 [CompilerGenerated]
 public class LogAttribute : Attribute {{ }}";
 
+            var sourceText = SourceText.From(logSrc, Encoding.UTF8);
 
-            context.AddSource("Log.cs", logSrc);
+            context.AddSource("Loggg.cs", sourceText);
         }
 
         public void Initialize(GeneratorInitializationContext context)

@@ -19,7 +19,9 @@ namespace GeneratedNamespace
     {
         public static void GeneratedMethod()
         {
+            // Here we go....
             // generated code
+            System.Console.WriteLine(""Sri Ram Jai Ram Jai Jai Ram..."");
         }
     }
 }", Encoding.UTF8));
