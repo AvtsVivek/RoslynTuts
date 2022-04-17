@@ -16,3 +16,10 @@ https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookb
 
 This also has unit tests written using MsTest and XUnit.
 
+https://www.thinktecture.com/net/roslyn-source-generators-analyzers-code-fixes/
+
+
+https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3fca
+
+    https://github.com/enisn/Mastering-at-Source-Generators
+
