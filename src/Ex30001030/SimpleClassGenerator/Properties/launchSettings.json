@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SimpleClassGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\SimpleClassGeneratorConsoleApp\\SimpleClassGeneratorConsoleApp.csproj"
+    }
+  }
+}

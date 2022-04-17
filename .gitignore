@@ -49,7 +49,9 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
-**/Properties/launchSettings.json
+
+# Note we may not always want to ignore launchSettings file
+# **/Properties/launchSettings.json
 
 *_i.c
 *_p.c
