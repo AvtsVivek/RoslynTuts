@@ -64,10 +64,15 @@ namespace MyCode
         }
 
         private static Compilation CreateCompilation(string source)
-            => CSharpCompilation.Create("compilation",
+        {
+            var location = MetadataReference.CreateFromFile(typeof(Binder).GetTypeInfo().Assembly.Location);
+            var compilation = CSharpCompilation.Create("compilation",
                 new[] { CSharpSyntaxTree.ParseText(source) },
-                new[] { MetadataReference.CreateFromFile(typeof(Binder).GetTypeInfo().Assembly.Location) },
+                new[] { location },
                 new CSharpCompilationOptions(OutputKind.ConsoleApplication));
+            return compilation;
+        }
+
 
         private static string SourceText = @"
 namespace GeneratedNamespace
