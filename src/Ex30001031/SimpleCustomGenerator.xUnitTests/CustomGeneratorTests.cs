@@ -41,8 +41,10 @@ namespace MyCode
             diagnostics.Count().Should().Be(0); // there were no diagnostics created by the generators  
 
             outputCompilation.SyntaxTrees.Count().Should().Be(2); // we have two syntax trees, the original 'user' provided one, and the one added by the generator
-            outputCompilation.GetDiagnostics().Count().Should().Be(0); // verify the compilation with the added source has no diagnostics
+
+            var diag = outputCompilation.GetDiagnostics().FirstOrDefault();
             
+            outputCompilation.GetDiagnostics().Count().Should().Be(0); // verify the compilation with the added source has no diagnostics
 
             // Or we can look at the results directly:
             GeneratorDriverRunResult runResult = driver.GetRunResult();
@@ -75,6 +77,7 @@ namespace GeneratedNamespace
         public static void GeneratedMethod()
         {
             // generated code
+            System.Console.WriteLine(""Hello..."");
         }
     }
 }";
