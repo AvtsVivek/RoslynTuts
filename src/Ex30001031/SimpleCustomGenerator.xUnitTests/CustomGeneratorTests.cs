@@ -68,10 +68,14 @@ namespace MyCode
         {
             var location = MetadataReference.CreateFromFile(typeof(Binder).GetTypeInfo().Assembly.Location);
             var consoleRef = MetadataReference.CreateFromFile(typeof(Console).Assembly.Location);
-            var objectRef = MetadataReference.CreateFromFile(typeof(Object).Assembly.Location);
-            var compilation = CSharpCompilation.Create("compilation",
+            // var objectRef = MetadataReference.CreateFromFile(typeof(Object).Assembly.Location);
+            // The following is what is needed. Not the above objectRef. Now the test is passing.
+            // And there are no compilation diagnostic errors.
+            var systemRuntime = Assembly.Load("System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a");
+            var systemRuntimeRef = MetadataReference.CreateFromFile(systemRuntime.Location);
+            var compilation = CSharpCompilation.Create("compilation",                
                 new[] { CSharpSyntaxTree.ParseText(source) },
-                new[] { location, consoleRef, objectRef },
+                new[] { location, consoleRef, /*objectRef,*/ systemRuntimeRef },
                 new CSharpCompilationOptions(OutputKind.ConsoleApplication));
             return compilation;
         }
