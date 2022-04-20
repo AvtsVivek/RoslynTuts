@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using FluentAssertions;
+using System;
 
 namespace SimpleCustomGenerator.xUnitTests
 {
@@ -66,9 +67,11 @@ namespace MyCode
         private static Compilation CreateCompilation(string source)
         {
             var location = MetadataReference.CreateFromFile(typeof(Binder).GetTypeInfo().Assembly.Location);
+            var consoleRef = MetadataReference.CreateFromFile(typeof(Console).Assembly.Location);
+            var objectRef = MetadataReference.CreateFromFile(typeof(Object).Assembly.Location);
             var compilation = CSharpCompilation.Create("compilation",
                 new[] { CSharpSyntaxTree.ParseText(source) },
-                new[] { location },
+                new[] { location, consoleRef, objectRef },
                 new CSharpCompilationOptions(OutputKind.ConsoleApplication));
             return compilation;
         }
