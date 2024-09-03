@@ -33,4 +33,12 @@ https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3f
 5. https://www.youtube.com/watch?v=BfYxZ4mfv0E&pp=ygUfcm9zbHluIGRvdG5ldCBjb21waWxlciBwbGF0Zm9ybQ%3D%3D
 6. https://www.youtube.com/watch?v=wXXHd8gYqVg&pp=ygUfcm9zbHluIGRvdG5ldCBjb21waWxlciBwbGF0Zm9ybQ%3D%3D
 7. https://www.youtube.com/watch?v=0oXAZQBHH70&pp=ygUfcm9zbHluIGRvdG5ldCBjb21waWxlciBwbGF0Zm9ybQ%3D%3D
+8. https://denace.dev/exploring-roslyn-net-compiler-platform-sdk
+9. https://www.syncfusion.com/succinctly-free-ebooks/roslyn/project-roslyn-the-net-compiler-platform
+10. https://learn.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2022
+11. https://www.youtube.com/watch?v=-bBA8WvH-BQ
+12. https://www.youtube.com/watch?v=ROK4BMx81EY
+13. https://www.youtube.com/watch?v=BfYxZ4mfv0E
+14. https://www.youtube.com/watch?v=Yf8t7GqA6zA
+15. 
 
