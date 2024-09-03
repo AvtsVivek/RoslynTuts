@@ -50,5 +50,8 @@ https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3f
     1.  https://www.youtube.com/watch?v=wXXHd8gYqVg&list=PLxk7xaZWBdUT23QfaQTCJDG6Q1xx6uHdG
 13. Roslyn Analyzers
     1.  https://www.youtube.com/watch?v=RWOmUFex5Cw
+14. 
+15. https://www.pluralsight.com/courses/dotnet-compiler-platform-introduction
+16. 
 
 
