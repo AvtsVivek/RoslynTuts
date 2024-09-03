@@ -29,23 +29,26 @@ https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3f
 1. https://www.youtube.com/@learnroslyn/videos
    1. https://www.youtube.com/watch?v=Hu_rtcNoVgc&list=PLmoVFE4i0sTXwx750dJbWE577uWmEGVxY
 2. https://www.youtube.com/playlist?list=PLmoVFE4i0sTXwx750dJbWE577uWmEGVxY
-3. https://www.youtube.com/watch?v=F9DT2G7K5z4&pp=ygUfcm9zbHluIGRvdG5ldCBjb21waWxlciBwbGF0Zm9ybQ%3D%3D    
-4. https://www.youtube.com/watch?v=BfYxZ4mfv0E&pp=ygUfcm9zbHluIGRvdG5ldCBjb21waWxlciBwbGF0Zm9ybQ%3D%3D
-5. https://www.youtube.com/watch?v=wXXHd8gYqVg&pp=ygUfcm9zbHluIGRvdG5ldCBjb21waWxlciBwbGF0Zm9ybQ%3D%3D
-6. https://www.youtube.com/watch?v=0oXAZQBHH70&pp=ygUfcm9zbHluIGRvdG5ldCBjb21waWxlciBwbGF0Zm9ybQ%3D%3D
-7. https://denace.dev/exploring-roslyn-net-compiler-platform-sdk
-8.  https://www.syncfusion.com/succinctly-free-ebooks/roslyn/project-roslyn-the-net-compiler-platform
-9.  https://learn.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2022
-10. Using Roslyn Analyzers
+3. Boost Your .NET Development with Roslyn Analyzers: Tips and Tricks
+   1. https://www.youtube.com/watch?v=F9DT2G7K5z4
+   2. https://github.com/slthomason/StartupHakkSamples/tree/main/223_Roslyn_DotNet_Compiler
+4. Automate yourself out of a job with Roslyn - Mark Rendle - NDC Porto 2022
+   1. https://www.youtube.com/watch?v=0oXAZQBHH70
+   2. https://www.youtube.com/watch?v=0oXAZQBHH70&pp=ygUfcm9zbHluIGRvdG5ldCBjb21waWxlciBwbGF0Zm9ybQ%3D%3D
+5. https://denace.dev/exploring-roslyn-net-compiler-platform-sdk
+6.  https://www.syncfusion.com/succinctly-free-ebooks/roslyn/project-roslyn-the-net-compiler-platform
+7.  https://learn.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2022
+8.  Using Roslyn Analyzers
     1.  https://www.youtube.com/watch?v=-bBA8WvH-BQ
-11. .NET Compiler Platform Roslyn. Analyzers and the Rise of Code Aware Libraries
+9.  .NET Compiler Platform Roslyn. Analyzers and the Rise of Code Aware Libraries
     1.  https://www.youtube.com/watch?v=ROK4BMx81EY
-12. Let's Code an incremental source generator with Roslyn - Stefan Pölz - NDC Oslo 2023
+10. Let's Code an incremental source generator with Roslyn - Stefan Pölz - NDC Oslo 2023
     1.  https://www.youtube.com/watch?v=BfYxZ4mfv0E
-13. All About C# Source Generators | .NET Conf 2023
+11. All About C# Source Generators | .NET Conf 2023
     1.  https://www.youtube.com/watch?v=Yf8t7GqA6zA
-14. Learn Roslyn Now - E01 - Introduction to Roslyn Tooling
+12. Learn Roslyn Now - E01 - Introduction to Roslyn Tooling
     1.  https://www.youtube.com/watch?v=wXXHd8gYqVg&list=PLxk7xaZWBdUT23QfaQTCJDG6Q1xx6uHdG
-15. Roslyn Analyzers
+13. Roslyn Analyzers
     1.  https://www.youtube.com/watch?v=RWOmUFex5Cw
+
 
