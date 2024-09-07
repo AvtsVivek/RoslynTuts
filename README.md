@@ -52,6 +52,7 @@ https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3f
     1.  https://www.youtube.com/watch?v=RWOmUFex5Cw
 14. 
 15. https://www.pluralsight.com/courses/dotnet-compiler-platform-introduction
-16. https://www.daveaglick.com/posts/compiler-platform-scripting
+16. Introduction to Scripting with the .NET Compiler Platform (Roslyn)
+        1. https://www.daveaglick.com/posts/compiler-platform-scripting
 
 
